@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
@@ -26,14 +30,14 @@
             <form id="search-city">
                 <div class="input-group">
                     <label for="search-input" class="col-md-12">Search for a City:</label>
-                    <input type="text" id="search-input" name="search-input">
-                    <button type="button" class="btn btn-primary">
+                    <input type="text" id="search-input" name="search-input" class="form-control" required>
+                    <button type="button" class="btn btn-primary" id="submitSearch">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
             </form>
-            <div class="recent-search">
-            </div>
+            <ul class="recent-search d-none">
+            </ul>
         </aside>
 
         <main class="col-md-9">
